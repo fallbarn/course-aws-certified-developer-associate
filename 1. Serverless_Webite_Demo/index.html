@@ -8,7 +8,8 @@
 					document.getElementById("my-demo").innerHTML = this.responseText;
 					}
 				};
-				xhttp.open("GET", "MY_API_GATEWAY_ENDPOINT_URL", true);
+				// sle note: rest call to lamda api 
+				xhttp.open("GET", "https://i1b94nqpg9.execute-api.us-east-1.amazonaws.com/default/mylamdafunction", true);
 				xhttp.send();
 
 			}
